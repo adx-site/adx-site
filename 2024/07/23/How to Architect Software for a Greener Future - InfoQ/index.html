@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>How to Architect Software for a Greener Future - InfoQ - adx-flare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2262453677837068" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/">Home</a>
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/tags/ChatGPT">ChatGPT</a>
+            
+            <a class="navbar-item " href="/tags/Midjourney">Midjourney</a>
+            
+            <a class="navbar-item " href="/tags/AI">AI</a>
+            
+            <a class="navbar-item " href="/tags">Tags</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            How to Architect Software for a Greener Future - InfoQ
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2024-07-22T16:22:53.000Z" itemprop="datePublished">Jul 23 2024</time>
+            
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            25 minutes read (About 3745 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head><meta name="generator" content="Hexo 3.9.0"></head><body><h3 id="Key-Takeaways"><a href="#Key-Takeaways" class="headerlink" title="Key Takeaways"></a>Key Takeaways</h3><ul>
+<li>Carbon-aware actions can help you be greener</li>
+<li>Machine utilization is vital to carbon efficiency</li>
+<li>The cloud can be helpful in architecting software for a greener future, but it is not without action from you</li>
+<li>The software will benefit from carbon efficiency</li>
+<li>Building green is cheaper, more performant, more secure, and more resilient</li>
+</ul>
+<p>In this article, I will share tips, tricks, and advice on architecting software for a greener future. I’ve been discussing this topic for several years. Previously, I might have started with some NASA data showing global temperatures, carbon dioxide levels, ocean warming, or methane concentrations to highlight climate issues. However, I’m done discussing the problem—many others speak on climate change eloquently. Instead, this article will focus on solutions. Assuming you’re already aware of the climate change situation, we will move straight to addressing it.</p>
+<a id="more"></a>
+<h2 id="Why-Operational-Efficiency"><a href="#Why-Operational-Efficiency" class="headerlink" title="Why Operational Efficiency?"></a>Why Operational Efficiency?</h2><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p>Operational efficiency architecture connects to green software within the broader context of software development. But is it worth discussing? To answer, we first need to ask: what makes software green?</p>
+<p>Sustainability is a broad term that involves water and land use, carbon emissions, and building software for green purposes. This article focuses on carbon efficiency, which includes three key aspects: energy efficiency (using the least electricity possible), hardware efficiency (using the least embodied carbon), and carbon awareness (doing more when electricity is clean and less when it’s dirty). These concepts are central to this article.</p>
+<p>Why should you care about operational efficiency? Isn’t code efficiency enough? Efficient code is excellent, but rewriting software in highly efficient languages like Rust can be time-consuming and may require skills your organization lacks. Platforms and languages should help with code efficiency, but it’s not a silver bullet.</p>
+<p>What about data center efficiency? While hyperscale data centers are more efficient and cloud providers focus on sustainability, cloud users are responsible for sustainability in the cloud. Like driving an efficient car recklessly, inefficient cloud usage still produces emissions.</p>
+<p>What about greener grids and renewable energy? While the transition to renewables is happening faster than ever, it’s not fast enough. Software must operate efficiently in a world with variable electricity supply, making future-proofing essential.</p>
+<p>And greener hardware? Despite advances, green hardware alone doesn’t solve energy problems and cannot meet high-performance requirements.</p>
+<p>Operational efficiency is worthwhile because it’s within your control. You don’t need to wait for external developments—you can start today. Small efforts can yield significant benefits, often resulting in cheaper, more performant, and more resilient services. I hope this article convinces you of its importance.</p>
+<h3 id="Carbon-Awareness"><a href="#Carbon-Awareness" class="headerlink" title="Carbon Awareness"></a>Carbon Awareness</h3><p>Next, we need to discuss some terminology essential for understanding the rest of this article. I mentioned carbon efficiency, an umbrella term meaning to use the least amount of carbon possible. Carbon awareness is one aspect of carbon efficiency. Although it sounds a bit sci-fi, carbon awareness means using electricity when and where it is greener. This approach helps decarbonize the grid immediately by using existing green energy and supports renewable energy producers financially over time.</p>
+<p>Does this work? Moving all workloads in the world to a place like Norway, which relies on hydropower and is green, sounds attractive. But all the workloads in the world are a lot, and this could (would!) overload local data centers. Moving some workloads, however, where it logistically and legally makes sense, is a good idea. Carbon awareness is not a silver bullet and must be used correctly to be effective. When appropriately applied, it’s a powerful tool for short- and long-term benefits without overwhelming specific regions.</p>
+<p>You can access data on grid greenness through various APIs, which provide real-time information and 24-hour forecasts. These APIs are incredibly useful as you won’t need to learn all the details about your grid—just use the API.</p>
+<h3 id="Carbon-Efficiency"><a href="#Carbon-Efficiency" class="headerlink" title="Carbon Efficiency"></a>Carbon Efficiency</h3><p>When it comes to architecting for carbon efficiency, it boils down to machine utilization. Maximize the use of your physical resources. The goal is to extract as much as possible from your hardware. Why? Firstly, efficiently utilizing one server may eliminate the need to buy another. If one server is inefficiently used, you might need another one to handle the workload.</p>
+<p>Secondly, there’s a thing called energy proportionality. The switch-on cost of a server is high. Having an idle server incurs a significant baseline cost. As you add more tasks, energy use increases, but not drastically. The baseline isn’t zero; it’s quite high.</p>
+<h2 id="What-Can-You-Do"><a href="#What-Can-You-Do" class="headerlink" title="What Can You Do?"></a>What Can You Do?</h2><p>What can you do about machine utilization? This article will cover key concepts of being more carbon-aware, more carbon-efficient, and achieving higher machine utilization. I’ll explain some patterns that can make your operations greener. We’ll start with three different carbon-aware actions.</p>
+<h3 id="Time-Shift"><a href="#Time-Shift" class="headerlink" title="Time Shift"></a>Time Shift</h3><p>Firstly, it’s a time shift, moving to a greener time. You can use burstable or flexible instances to achieve this. It’s essentially a sophisticated scheduling problem, akin to looking at a forecast to determine when the grid will be greenest—or conversely, how to avoid peak dirty periods. There are various methods to facilitate this on the operational side. Naturally, this strategy should apply primarily to non-demanding workloads. For instance, you can’t ask someone to wait seven hours to buy a ticket because solar panels are active on the grid. However, tasks like app updates can afford to wait.</p>
+<h3 id="Location-Shift"><a href="#Location-Shift" class="headerlink" title="Location Shift"></a>Location Shift</h3><p>Another carbon-aware action you can take is location shifting—moving your workload to a greener location. This approach isn’t always feasible but works well when network costs are low, and privacy considerations allow. For example, it’s impractical to move a workload across continents, like across Pacific Ocean, due to high network costs and thus high environmental impact. However, shifting to a different region within your country or your cloud provider’s network can benefit workloads with few data dependencies. Consult your cloud provider to identify the greenest region that meets your operational needs.</p>
+<h3 id="Demand-Shape"><a href="#Demand-Shape" class="headerlink" title="Demand Shape"></a>Demand Shape</h3><p>The last carbon-aware action is demand shaping, which can seem quite futuristic. This involves altering your software’s behavior to optimize energy usage: doing more when energy is green and less when it’s not.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p>There are two approaches to implementing this: making decisions autonomously without user involvement or offering users an eco or low-carbon mode for optional selection. For instance, you can schedule background updates during off-peak energy times without user intervention, or users can opt into eco modes for reduced energy consumption.</p>
+<p>This concept may sound futuristic, but it’s already widely adopted in the industry. Companies like Google, Xbox, Windows, and iPhone employ demand shaping for tasks like media processing, game installs, updates, and clean charging. It’s environmentally friendly and can reduce energy costs when electricity demand is lower.</p>
+<h2 id="Carbon-efficient"><a href="#Carbon-efficient" class="headerlink" title="Carbon efficient"></a>Carbon efficient</h2><p>These are some things that will increase your carbon efficiency by maximizing your machine utilization. Here are three key ones: right-sizing, autoscaling, and mixing workloads.</p>
+<h3 id="Right-sizing"><a href="#Right-sizing" class="headerlink" title="Right-sizing"></a>Right-sizing</h3><p>Right-sizing involves fitting your virtual machine or any resource, like containers, to match its usage on a physical server. Instead of optimistically provisioning a large resource and forgetting about it, right-sizing requires thoughtful analysis from the outset. By matching resources to actual needs, you can maximize the use of each physical server, saving energy and reducing embodied carbon over time, thanks to energy proportionality.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p>Right-sizing also influences capacity planning in your data center or the cloud. Overprovisioning signals the need for more hardware purchases, potentially leading to unnecessary resource use. If everyone adopted right-sizing practices, capacity planning could be more sustainable and accurately aligned with actual demand growth.</p>
+<p>Implementing right-sizing requires careful planning and orchestration beyond simply drawing rectangles and making recommendations. One tool to achieve this is auto-scaling.</p>
+<h3 id="Autoscaling"><a href="#Autoscaling" class="headerlink" title="Autoscaling"></a>Autoscaling</h3><p>Let’s discuss autoscaling. Imagine the same chart, now with added demand. Autoscaling dynamically adjusts resources—such as virtual machines or containers—to match demand. Initially, it’s not so complicated to scale up when anticipating increased demand, ensuring sufficient resources. It is a safe move that most of us are happy to make. However, scaling down is equally crucial for sustainability, preventing overprovisioning and inefficient resource use.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p>Autoscaling is particularly effective for workloads with variable demand, like those experiencing peak and off-peak hours. It enhances resource utilization, making it a greener option overall. Cloud providers typically support autoscaling, or you can implement it with a cluster scheduler or infrastructure as code, albeit not without effort.</p>
+<h3 id="Mixed-workloads"><a href="#Mixed-workloads" class="headerlink" title="Mixed workloads"></a>Mixed workloads</h3><p>Next, I’d like to discuss mixing workloads. Imagine two workloads coexisting on the same system, differentiated perhaps by time or other factors. To achieve maximum utilization, you want the resource use of these workloads to interlock or complement each other over time. For example, customers in different regions, like Southeast Asia and Northern Europe, may have staggered activity times. By scheduling their workloads to overlap less, you can optimize machine usage—using more resources when one workload is less active and vice versa. This strategy requires tagging workloads with attributes for effective scheduling rather than relying on automatic processes. It’s particularly effective for diverse patterns, such as bursty ticket sales versus steady update installs.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACbklEQVRoQ+2aMU4dMRCGZw6RC1CSSyQdLZJtKQ2REgoiRIpQkCYClCYpkgIESQFIpIlkW+IIcIC0gUNwiEFGz+hlmbG9b1nesvGW++zxfP7H4/H6IYzkwZFwQAUZmpJVkSeniFJKA8ASIi7MyfkrRPxjrT1JjZ8MLaXUDiJuzwngn2GJaNd7vyP5IoIYY94Q0fEQIKIPRGS8947zSQTRWh8CwLuBgZx479+2BTkHgBdDAgGAC+fcywoyIFWqInWN9BSONbTmFVp/AeA5o+rjKRJ2XwBYRsRXM4ZXgAg2LAPzOCDTJYQx5pSIVlrC3EI45y611osMTHuQUPUiYpiVooerg7TWRwDAlhSM0TuI+BsD0x4kGCuFSRVzSqkfiLiWmY17EALMbCAlMCmI6IwxZo+INgQYEYKBuW5da00PKikjhNNiiPGm01rrbwDwofGehQjjNcv1SZgddALhlJEgwgJFxDNr7acmjFLqCyJuTd6LEGFttpmkYC91Hrk3s1GZFERMmUT01Xv/sQljjPlMRMsxO6WULwnb2D8FEs4j680wScjO5f3vzrlNJszESWq2LYXJgTzjZm56MCHf3zVBxH1r7ftU1splxxKYHEgoUUpTo+grEf303rPH5hxENJqDKQEJtko2q9zGeeycWy3JhpKhWT8+NM/sufIhBwKI+Mta+7pkfxKMtd8Qtdbcx4dUQZcFCQ2I6DcAnLUpf6YMPxhIDDOuxC4C6djoQUE6+tKpewWZ1wlRkq0qUhXptKTlzv93aI3jWmE0Fz2TeujpX73F9TaKy9CeMk8vZusfBnqZ1g5GqyIdJq+XrqNR5AahKr9CCcxGSwAAAABJRU5ErkJggg==" alt></p>
+<p>Another related concept is multi-tenancy, where different customer needs are combined to maximize machine efficiency. While challenging, hyper scalers excel at this approach because it reduces the number of machines needed, thus enhancing energy proportionality and overall efficiency.</p>
+<h3 id="Sustainability—Cost—Resilience"><a href="#Sustainability—Cost—Resilience" class="headerlink" title="Sustainability—Cost—Resilience"></a>Sustainability—Cost—Resilience</h3><p>We’ve explored several actions and how they enhance sustainability through key strategies. What’s crucial to highlight is that these actions don’t operate in isolation. Sustainability shouldn’t stand alone but should interlock with other critical metrics, such as cost. Increasing machine utilization often reduces costs, making it a dual benefit. You can prioritize cost savings and then consider sustainability benefits, or vice versa.</p>
+<p>Resiliency is another significant factor. Many green practices, like autoscaling, improve software resilience by adapting to demand variability. Carbon awareness actions also serve to future-proof your software for a post-energy transition world, where considerations like carbon caps and budgets may become commonplace. Establishing mechanisms now prepares your software for future regulatory and environmental challenges.</p>
+<h2 id="Will-Moving-to-the-Cloud-Help"><a href="#Will-Moving-to-the-Cloud-Help" class="headerlink" title="Will Moving to the Cloud Help?"></a>Will Moving to the Cloud Help?</h2><p>I’ve mentioned the cloud several times. Will migrating to the cloud solve all your sustainability problems magically? Not quite. While it can be beneficial, it’s not simply a matter of lift and shift. There are vital considerations to keep in mind. One concept I want to highlight is LightSwitchOps, which Holly Cummins discussed at last year’s QCon. It’s about making it as easy to switch off resources as it is to turn off a light switch. Just as we trust that the lights will switch on when we return to a room, we should trust that idle resources can be efficiently shut down and turned back on again—whether it’s a server or a network connection. Removing idle resources is cost-effective and greener, reducing unnecessary resource consumption and sending accurate signals to capacity planning.</p>
+<p>Additionally, there’s serverless computing, which is promoted heavily by cloud providers. Serverless allows you to delegate workload management to the provider, optimizing machine utilization safely. It leverages managed services like databases and pre-optimized instances designed by the cloud provider. By using these services as intended, you benefit from their efficiency and cost-effectiveness without replicating the effort internally. Building and maintaining equivalent systems independently would require significant development time, effort, and cost, making it less worthwhile than leveraging cloud provider offerings.</p>
+<h3 id="What-Do-Cloud-Providers-Say"><a href="#What-Do-Cloud-Providers-Say" class="headerlink" title="What Do Cloud Providers Say?"></a>What Do Cloud Providers Say?</h3><p>Don’t just take my word for it. What do the cloud providers say about this? Let’s go through the three big ones and their well-architected frameworks to learn together what they think you should do to architect greener software.</p>
+<h3 id="Google-Cloud"><a href="#Google-Cloud" class="headerlink" title="Google Cloud"></a>Google Cloud</h3><p>Let’s start with Google Cloud’s approach through their Google Cloud Architect Framework, which mirrors a well-architected framework. It’s built on five pillars: operational excellence, security, privacy and compliance, reliability, cost optimization, and performance optimization. Within this framework, they emphasize sustainability with six actionable strategies for greener practices on Google Cloud.</p>
+<p>Firstly, understanding your carbon footprint is vital. Google provides tools for location- and market-based scope 2 emissions, though location-based is recommended for clarity and accuracy if you are interested in lower lever insight. On an organizational level, market-based numbers might also be interesting. This tooling helps organizations gauge and manage their environmental impact effectively.</p>
+<p>Next, choosing the most sustainable cloud regions aligns with the principles of location shifting discussed earlier. Google Cloud offers a list of recommendations based on historical data, aiming to minimize environmental impact through strategic workload placement.</p>
+<p>Selecting the most suitable cloud services is crucial. Google advocates for services like serverless options such as Cloud Run and Cloud Functions, which maximize resource efficiency through automatic scaling and efficient workload management. Google Kubernetes Engine and BigQuery are also prominent due to their managed and serverless capabilities, which optimize machine utilization.</p>
+<p>Google also encourages minimizing idle resources. By ensuring that resources are actively utilized rather than left idle, organizations can reduce unnecessary energy consumption and improve workload management efficiency.</p>
+<p>Lastly, Google Cloud promotes reducing emissions from batch workloads by optimizing scheduling to leverage greener energy sources when available.</p>
+<p>In summary, Google Cloud’s approach integrates sustainability seamlessly into its architectural recommendations, emphasizing efficient resource usage and environmental stewardship through thoughtful cloud service utilization.</p>
+<h3 id="AWS"><a href="#AWS" class="headerlink" title="AWS"></a>AWS</h3><p>AWS, like Google Cloud, emphasizes sustainability as one of the pillars of its well-architected framework, alongside operational excellence, security, reliability, performance efficiency, and cost optimization. This inclusion underscores the importance of integrating environmental considerations into cloud architecture decisions.</p>
+<p>AWS offers several key recommendations for incorporating sustainability into cloud operations:</p>
+<p>AWS advises selecting regions with greener energy options to minimize environmental impact. This strategy aligns with choosing cloud regions based on sustainability metrics to reduce the carbon footprint of data center operations.</p>
+<p>Aligning resource provisioning with actual demand patterns is crucial. This practice ensures that infrastructure is utilized optimally, avoiding underutilization and overprovisioning. It also helps reduce unnecessary energy consumption during periods of low demand.</p>
+<p>Another focus area is optimizing software and architecture. AWS encourages using managed services, right-sizing instances, and adopting serverless computing models like AWS Lambda to minimize resource waste and improve energy efficiency.</p>
+<p>Efficient data management is promoted to avoid unnecessary data accumulation. AWS recommends evaluating data needs and retention policies and ensuring that only essential data is stored. This approach reduces storage and processing energy costs.</p>
+<p>AWS suggests using hardware and instance types that have minimal environmental impact. For instance, AWS Graviton processors are highlighted for their efficiency in specific workloads. Additionally, AWS promotes spot instances for cost-effective batch processing and time-sensitive workloads.</p>
+<p>Integrating sustainability into organizational culture and processes is also emphasized. AWS acknowledges the importance of embedding environmental stewardship into company values and operational practices, fostering long-term commitment to sustainability.</p>
+<p>AWS’s approach underscores a comprehensive strategy to integrate sustainability into cloud architecture, focusing on efficiency, cost-effectiveness, and environmental responsibility. Organizations can effectively align their cloud strategies with sustainable practices by leveraging their well-architected framework.</p>
+<h3 id="Azure"><a href="#Azure" class="headerlink" title="Azure"></a>Azure</h3><p>Like AWS and Google Cloud, Azure incorporates sustainability as a pillar in its well-architected framework, alongside reliability, cost optimization, operational excellence, performance efficiency, and security. This holistic approach aims to integrate environmental considerations into the design and deployment of workloads on Azure.</p>
+<p>Azure provides several key recommendations for building greener solutions on their platform:</p>
+<p>Application design focuses on coding efficiently; we will not cover that now.</p>
+<p>Application platform considerations emphasize carbon awareness, right-sizing resources, and eliminating idle resources. Azure encourages using managed services and highly optimized platforms like Azure Kubernetes Service (AKS) for efficient resource utilization.</p>
+<p>Azure includes testing strategies in CI/CD pipelines to ensure sustainable practices during software development and deployment phases, promoting automation and efficiency in testing processes.</p>
+<p>Operational procedures encompass the measurement of carbon footprint, cultural changes, and operational practices that promote sustainability across organizational workflows and practices.</p>
+<p>Network and connectivity considerations highlight strategies to minimize data transmission over networks and optimize data flow to and from applications to reduce energy consumption and enhance efficiency.</p>
+<p>Storage practices discourage data hoarding, emphasizing the importance of storing only necessary data to minimize storage costs and energy consumption.</p>
+<p>Security recommendations integrate sustainability by designing secure architectures that minimize environmental impact, ensuring that security measures contribute to overall energy efficiency and resource optimization.</p>
+<p>Azure’s approach underscores a comprehensive strategy to integrate sustainability into cloud architecture, promoting efficient resource utilization, minimizing environmental impact, and aligning with best practices in cloud computing.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>What should you take away from this article? Carbon-aware actions, like demand shifting and shaping, can help you be greener and future-proof your operations for a post-energy transition grid. Machine utilization is vital to carbon efficiency; you want appropriate machine utilization by removing idle resources and taking actions such as right-sizing and auto-scaling. Cloud can help, but only with your action; think about using managed resources or the most efficient hardware. The software will benefit from carbon efficiency, and building green is cheaper, more performant, more secure, and more resilient.</p>
+<h2 id="About-the-Author"><a href="#About-the-Author" class="headerlink" title="About the Author"></a>About the Author</h2><p>[![](<a href="https://cdn.infoq.com/statics_s1_20240705081916/images/profiles/7621c141141a2fb841e6f3f9f53614a" target="_blank" rel="noopener">https://cdn.infoq.com/statics_s1_20240705081916/images/profiles/7621c141141a2fb841e6f3f9f53614a</a></p>
+<p>Show moreShow less</p>
+</body></html>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2024/07/26/8 Free AI Drawing Websites in China, Supporting Midjourney and Other Drawing Models/">8 Free AI Drawing Websites in China, Supporting Midjourney and Other Drawing Models</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2024/07/23/TikTok fast-tracks artist account creation for DistroKid members _ TechCrunch/">TikTok fast-tracks artist account creation for DistroKid members | TechCrunch</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2024 adx-flare&nbsp;
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+
+<script src="/js/script.js"></script>
+
+    
+</body>
+</html>

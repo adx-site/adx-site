@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>50% Faster Than OpenAI&#39;s Whisper, Latest Open-Source Speech Model - adx-flare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2262453677837068" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/">Home</a>
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/tags/ChatGPT">ChatGPT</a>
+            
+            <a class="navbar-item " href="/tags/Midjourney">Midjourney</a>
+            
+            <a class="navbar-item " href="/tags/AI">AI</a>
+            
+            <a class="navbar-item " href="/tags">Tags</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            50% Faster Than OpenAI&#39;s Whisper, Latest Open-Source Speech Model
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            
+                <time datetime="2024-08-06T00:34:23.000Z" itemprop="datePublished">Aug 6 2024</time>
+            
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 minutes read (About 596 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head><meta name="generator" content="Hexo 3.9.0"></head><body><p><em>Focused on the AIGC field, our professional community keeps track of the development and application of large language models (LLMs) such as Microsoft’s &amp; OpenAI’s, Baidu’s Wenxin Yiyan, and iFlytek’s Spark. We also focus on market research of LLMs and the AIGC developer ecosystem. Stay tuned!</em></p>
+<p>Generative AI startup aiOla has open-sourced its latest speech model, Whisper-Medusa, on its official website. This model has an inference efficiency that is 50% faster than OpenAI’s open-source Whisper.</p>
+<p>aiOla modified the Whisper architecture by adopting a parallel computation method with a “multi-head attention” mechanism, allowing the model to predict multiple tokens at each inference step without compromising performance and recognition accuracy.<br><a id="more"></a><br>Open-source URL: <a href="https://github.com/aiola-lab/whisper-medusa" target="_blank" rel="noopener">https://github.com/aiola-lab/whisper-medusa</a></p>
+<p>Huggingface URL: <a href="https://huggingface.co/aiola/whisper-medusa-v1" target="_blank" rel="noopener">https://huggingface.co/aiola/whisper-medusa-v1</a></p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835525.png" alt="Whisper-Medusa"></p>
+<p>The traditional Transformer architecture follows a sequential prediction process, generating tokens one by one. This means that when generating a new sequence, the model can only predict the next token, add it to the sequence, and then use the updated sequence to predict the following token.</p>
+<p>Although this ensures the coherence and contextual relevance of the generated sequence, <strong>it also has a significant drawback - it greatly limits the model’s inference efficiency</strong>.</p>
+<p>Additionally, because the model can only process one token at a time, it struggles to capture long-range dependencies in the data, potentially overlooking important global information, thus affecting the model’s overall performance and accuracy.</p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835526.png" alt="Whisper-Medusa"></p>
+<p><strong>Whisper-Medusa uses a 10-head multi-attention mechanism, enabling independent computation of attention distributions and parallel processing of inputs</strong>. The outputs are then combined through concatenation, forming a multi-dimensional vector.</p>
+<p>This vector is then sent to a fully connected layer for further processing to generate the final token prediction. This parallel data processing method not only speeds up the model’s inference efficiency but also enhances its expressive capability, as each attention head can focus on different subsets of the sequence, capturing richer contextual information.</p>
+<p>To make the multi-head attention mechanism run more efficiently in the Whisper-Medusa model, aiOla employed a weak supervision approach. <strong>During training, they froze the main components of the original Whisper model and used the transcriptions generated by this model as pseudo-labels to train the additional token prediction module</strong>.</p>
+<p>This allows the model to learn effective speech recognition patterns even without a large amount of manually annotated data.</p>
+<p>Furthermore, during training, Whisper-Medusa’s loss function needs to consider both prediction accuracy and efficiency. On one hand, the model needs to ensure that the predicted token sequence is as consistent as possible with the actual transcription;</p>
+<p>On the other hand, through parallel predictions with the multi-head attention mechanism, the model is encouraged to speed up prediction efficiency as much as possible without sacrificing accuracy.</p>
+<p>aiOla used various techniques such as learning rate scheduling, gradient clipping, and regularization to ensure stable convergence of the model during training while avoiding overfitting.</p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835527.png" alt="Whisper-Medusa"></p>
+<p>In terms of business scenarios, Whisper-Medusa can understand more than 100 languages, enabling users to develop various applications such as audio transcription and recognition, suitable for industries like translation, finance, tourism, logistics, and warehousing.</p>
+<p>aiOla stated that <strong>in the future, they will expand Whisper-Medusa’s multi-attention mechanism to 20 heads</strong>, further significantly enhancing its inference efficiency.</p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835528.png" alt="Whisper-Medusa"></p>
+</body></html>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/AI/">#AI</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2024/08/06/OpenAI Invests in a Chinese AI Project, This AI Pet's Revenue Has Increased 10 Times This Year/">OpenAI Invests in a Chinese AI Project, This AI Pet&#39;s Revenue Has Increased 10 Times This Year</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2024 adx-flare&nbsp;
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("en-AU");
+</script>
+
+
+
+<script src="/js/script.js"></script>
+
+    
+</body>
+</html>
