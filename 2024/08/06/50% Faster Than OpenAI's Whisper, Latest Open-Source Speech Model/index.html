@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Tag: AI - adx-flare</title>
+<title>50% Faster Than OpenAI&#39;s Whisper, Latest Open-Source Speech Model - adx-flare</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -65,7 +65,7 @@
             
             <a class="navbar-item " href="/tags/Midjourney">Midjourney</a>
             
-            <a class="navbar-item is-active" href="/tags/AI">AI</a>
+            <a class="navbar-item " href="/tags/AI">AI</a>
             
             <a class="navbar-item " href="/tags">Tags</a>
             
@@ -79,20 +79,12 @@
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5>#AI</h5>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
+    <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2024/08/06/50% Faster Than OpenAI's Whisper, Latest Open-Source Speech Model/" itemprop="url">50% Faster Than OpenAI&#39;s Whisper, Latest Open-Source Speech Model</a>
+            50% Faster Than OpenAI&#39;s Whisper, Latest Open-Source Speech Model
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -114,98 +106,51 @@
     
         <html><head><meta name="generator" content="Hexo 3.9.0"></head><body><p><em>Focused on the AIGC field, our professional community keeps track of the development and application of large language models (LLMs) such as Microsoft’s &amp; OpenAI’s, Baidu’s Wenxin Yiyan, and iFlytek’s Spark. We also focus on market research of LLMs and the AIGC developer ecosystem. Stay tuned!</em></p>
 <p>Generative AI startup aiOla has open-sourced its latest speech model, Whisper-Medusa, on its official website. This model has an inference efficiency that is 50% faster than OpenAI’s open-source Whisper.</p>
-<p>aiOla modified the Whisper architecture by adopting a parallel computation method with a “multi-head attention” mechanism, allowing the model to predict multiple tokens at each inference step without compromising performance and recognition accuracy.<br></p></body></html>
-        <p class="article-more-link">
-            <a href="/2024/08/06/50% Faster Than OpenAI's Whisper, Latest Open-Source Speech Model/#more">Read More</a>
-        </p>
+<p>aiOla modified the Whisper architecture by adopting a parallel computation method with a “multi-head attention” mechanism, allowing the model to predict multiple tokens at each inference step without compromising performance and recognition accuracy.<br><a id="more"></a><br>Open-source URL: <a href="https://github.com/aiola-lab/whisper-medusa" target="_blank" rel="noopener">https://github.com/aiola-lab/whisper-medusa</a></p>
+<p>Huggingface URL: <a href="https://huggingface.co/aiola/whisper-medusa-v1" target="_blank" rel="noopener">https://huggingface.co/aiola/whisper-medusa-v1</a></p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835525.png" alt="Whisper-Medusa"></p>
+<p>The traditional Transformer architecture follows a sequential prediction process, generating tokens one by one. This means that when generating a new sequence, the model can only predict the next token, add it to the sequence, and then use the updated sequence to predict the following token.</p>
+<p>Although this ensures the coherence and contextual relevance of the generated sequence, <strong>it also has a significant drawback - it greatly limits the model’s inference efficiency</strong>.</p>
+<p>Additionally, because the model can only process one token at a time, it struggles to capture long-range dependencies in the data, potentially overlooking important global information, thus affecting the model’s overall performance and accuracy.</p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835526.png" alt="Whisper-Medusa"></p>
+<p><strong>Whisper-Medusa uses a 10-head multi-attention mechanism, enabling independent computation of attention distributions and parallel processing of inputs</strong>. The outputs are then combined through concatenation, forming a multi-dimensional vector.</p>
+<p>This vector is then sent to a fully connected layer for further processing to generate the final token prediction. This parallel data processing method not only speeds up the model’s inference efficiency but also enhances its expressive capability, as each attention head can focus on different subsets of the sequence, capturing richer contextual information.</p>
+<p>To make the multi-head attention mechanism run more efficiently in the Whisper-Medusa model, aiOla employed a weak supervision approach. <strong>During training, they froze the main components of the original Whisper model and used the transcriptions generated by this model as pseudo-labels to train the additional token prediction module</strong>.</p>
+<p>This allows the model to learn effective speech recognition patterns even without a large amount of manually annotated data.</p>
+<p>Furthermore, during training, Whisper-Medusa’s loss function needs to consider both prediction accuracy and efficiency. On one hand, the model needs to ensure that the predicted token sequence is as consistent as possible with the actual transcription;</p>
+<p>On the other hand, through parallel predictions with the multi-head attention mechanism, the model is encouraged to speed up prediction efficiency as much as possible without sacrificing accuracy.</p>
+<p>aiOla used various techniques such as learning rate scheduling, gradient clipping, and regularization to ensure stable convergence of the model during training while avoiding overfitting.</p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835527.png" alt="Whisper-Medusa"></p>
+<p>In terms of business scenarios, Whisper-Medusa can understand more than 100 languages, enabling users to develop various applications such as audio transcription and recognition, suitable for industries like translation, finance, tourism, logistics, and warehousing.</p>
+<p>aiOla stated that <strong>in the future, they will expand Whisper-Medusa’s multi-attention mechanism to 20 heads</strong>, further significantly enhancing its inference efficiency.</p>
+<p><img src="https://adx-static.oss-cn-hongkong.aliyuncs.com/img/202408060835528.png" alt="Whisper-Medusa"></p>
+</body></html>
     
     </div>
     
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/AI/">#AI</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop is-hidden-mobile article-nav-prev">
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2024/08/06/OpenAI Invests in a Chinese AI Project, This AI Pet's Revenue Has Increased 10 Times This Year/">OpenAI Invests in a Chinese AI Project, This AI Pet&#39;s Revenue Has Increased 10 Times This Year</a>
+            
+        </span>
+    </div>
     
 </article>
 
 
 
 
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2024/08/06/OpenAI Invests in a Chinese AI Project, This AI Pet's Revenue Has Increased 10 Times This Year/" itemprop="url">OpenAI Invests in a Chinese AI Project, This AI Pet&#39;s Revenue Has Increased 10 Times This Year</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            
-                <time datetime="2024-08-06T00:17:46.000Z" itemprop="datePublished">Aug 6 2024</time>
-            
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            6 minutes read (About 877 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <html><head><meta name="generator" content="Hexo 3.9.0"></head><body><p>After the online event platform Run The World was acquired, its founder Xiaoyin Qu has created another <strong>AI-driven gamified learning product Heeyo</strong>. Last week, it announced that it had received seed funding of $3.5 million from OpenAI Startup Fund, Amazon Alexa Fund, Pear VC, Charge Ventures, and others.</p>
-<p><strong>Heeyo currently positions itself as Smart AI Friends to help children learn</strong>. It can provide each child with their own professional coach and playmate, chat with them, and help them learn. It offers AI chatbots and over 2,000 interactive games and activities, including books, quizzes, and role-playing adventures, for children aged 3 to 11.<br></p></body></html>
-        <p class="article-more-link">
-            <a href="/2024/08/06/OpenAI Invests in a Chinese AI Project, This AI Pet's Revenue Has Increased 10 Times This Year/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2024/07/26/8 Free AI Drawing Websites in China, Supporting Midjourney and Other Drawing Models/" itemprop="url">8 Free AI Drawing Websites in China, Supporting Midjourney and Other Drawing Models</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            
-                <time datetime="2024-07-25T23:58:50.000Z" itemprop="datePublished">Jul 26 2024</time>
-            
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            5 minutes read (About 797 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <html><head><meta name="generator" content="Hexo 3.9.0"></head><body><p>AI drawing is a technology based on deep learning models, such as Generative Adversarial Networks (GANs), which can analyze thousands of artworks and learn different artistic styles and techniques. Users only need to provide simple descriptions or choose specific styles, and AI drawing tools can automatically generate unique paintings. Today, I will share with you <strong>8 free AI drawing websites in China</strong>~</p>
-<p>For your convenience, the links in the article have been collected in the AI navigation website:</p>
-<p><a href="https://ai-to.cn" target="_blank" rel="noopener">https://ai-to.cn</a></p></body></html>
-        <p class="article-more-link">
-            <a href="/2024/07/26/8 Free AI Drawing Websites in China, Supporting Midjourney and Other Drawing Models/#more">Read More</a>
-        </p>
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
-    
     </div>
 </section>
     <footer class="footer">
