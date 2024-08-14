@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Stable Diffusion Prompt Note | adx-flare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Stable Diffusion">
+  
+  
+  
+  
+  <meta name="description" content="Photo Realistic0  Negative Prompt for Beauty1">
+<meta name="keywords" content="Stable Diffusion">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stable Diffusion Prompt Note">
+<meta property="og:url" content="http://adx-flare.com/2024/08/07/Stable Diffusion Prompt Note/index.html">
+<meta property="og:site_name" content="adx-flare">
+<meta property="og:description" content="Photo Realistic0  Negative Prompt for Beauty1">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2024-08-06T22:55:18.209Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stable Diffusion Prompt Note">
+<meta name="twitter:description" content="Photo Realistic0  Negative Prompt for Beauty1">
+  
+    <link rel="alternate" href="/atom.xml" title="adx-flare" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/fashion.css">
+  <link rel="stylesheet" href="/css/glyphs.css">
+ 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5297446075011848" crossorigin="anonymous"></script>
+
+
+</head>
+</html>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="adx-flare" rel="home"> adx-flare </a>
+            
+          </h1>
+          
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="/"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="archives"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="categories"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="tags"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="about"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Stable Diffusion Prompt Note" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Stable Diffusion Prompt Note
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2024/08/07/Stable Diffusion Prompt Note/" class="article-date">
+	  <time datetime="2024-08-06T22:29:08.000Z" itemprop="datePublished">August 7, 2024</time>
+	</a>
+
+       
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <html><head></head><body><h2 id="Photo-Realistic"><a href="#Photo-Realistic" class="headerlink" title="Photo Realistic"></a>Photo Realistic</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">raw photo, photorealistic, masterpiece, best quality, hires, intricate details, reflections, photographed on a Canon EOS R5, 50mm lens, F/2.8, HDR, 8k resolution, ray-tracing,</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Negative-Prompt-for-Beauty"><a href="#Negative-Prompt-for-Beauty" class="headerlink" title="Negative Prompt for Beauty"></a>Negative Prompt for Beauty</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EasyNegative, bad_prompt_version2, bad-hands-5, ng_deepnegative_v1_75t, username, (watermark:1.6), (text:1.4), (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, (outdoor:1.6), manboobs, backlight,(ugly:1.331), (duplicate:1.331), (morbid:1.21), (mutilated:1.21), (tranny:1.331), mutated hands, (poorly drawn hands:1.331), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331), (more than 2 nipples:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051), (too many fingers:1.61051), (unclear eyes:1.331), bad hands, missing fingers, extra digit, (futa:1.1), bad body, pubic hair, glans, (nipples:1.4), (nsfw:1.4), (nude:1.6),</span><br></pre></td></tr></tbody></table></figure>
+
+<a id="more"></a>
+<h2 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h2><table><thead><tr><th>Style</th><th>Description</th><th>Style</th><th>Description</th></tr></thead><tbody><tr><td>artbook</td><td>Original Art</td><td>game_cg</td><td>Game CG</td></tr><tr><td>tachi-e</td><td>Standing Art Style</td><td>comic</td><td>Comic</td></tr><tr><td>dakimakura</td><td>Body Pillow</td><td>cosplay</td><td>Cosplay</td></tr><tr><td>photo</td><td>Photo</td><td>personification</td><td>Personification</td></tr><tr><td>realistic</td><td>Realistic</td><td>sketch</td><td>Sketch</td></tr><tr><td>traditional_media</td><td>Hand-Drawn</td><td>sketch</td><td>Hand-Drawn</td></tr></tbody></table>
+
+<h2 id="Lighting-Style"><a href="#Lighting-Style" class="headerlink" title="Lighting Style"></a>Lighting Style</h2><table><thead><tr><th>Lighting</th><th>Description</th><th>Lighting</th><th>Description</th></tr></thead><tbody><tr><td>Bloom</td><td>Bloom</td><td>God rays</td><td>God Rays</td></tr><tr><td>Hard shadows</td><td>Hard Shadows</td><td>Studio lighting</td><td>Studio Lighting</td></tr><tr><td>Soft lighting</td><td>Soft Lighting</td><td>Diffused lighting</td><td>Diffused Lighting</td></tr><tr><td>Rim lighting</td><td>Rim Lighting</td><td>Volumetric lighting</td><td>Volumetric Lighting</td></tr><tr><td>Specular lighting</td><td>Specular Lighting</td><td>Cinematic lighting</td><td>Cinematic Lighting</td></tr><tr><td>Luminescence</td><td>Luminescence</td><td>Translucency</td><td>Translucency</td></tr><tr><td>Subsurface scattering</td><td>Subsurface Scattering</td><td>Global illumination</td><td>Global Illumination</td></tr><tr><td>Indirect light</td><td>Indirect Light</td><td>Radiant light rays</td><td>Radiant Light Rays</td></tr><tr><td>Bioluminescent details</td><td>Bioluminescent Details</td><td>Ektachrome</td><td>Ektachrome</td></tr><tr><td>Glowing</td><td>Glowing</td><td>Shimmering light</td><td>Shimmering Light</td></tr><tr><td>Halo</td><td>Halo</td><td>Iridescent</td><td>Iridescent</td></tr><tr><td>Backlighting</td><td>Backlighting</td><td>Caustics</td><td>Caustics</td></tr></tbody></table>
+
+<h2 id="Hair"><a href="#Hair" class="headerlink" title="Hair"></a>Hair</h2><table><thead><tr><th>Hair</th><th>Description</th><th>Hair</th><th>Description</th></tr></thead><tbody><tr><td>multicolored hair</td><td>Multicolored Hair</td><td>hime cut</td><td>Hime Cut</td></tr><tr><td>ahoge</td><td>Ahoge</td><td>braid</td><td>Braid</td></tr><tr><td>asymmetrical hair</td><td>Asymmetrical Hair</td><td>french braid</td><td>French Braid</td></tr><tr><td>blunt bangs</td><td>Blunt Bangs</td><td>braided ponytail</td><td>Braided Ponytail</td></tr><tr><td>parted bangs</td><td>Parted Bangs</td><td>hair intakes</td><td>Hair Intakes</td></tr><tr><td>side swept bangs</td><td>Side Swept Bangs</td><td>hair behind ear</td><td>Hair Behind Ear</td></tr><tr><td>curtained hair</td><td>Curtained Hair</td><td>hair over shoulder</td><td>Hair Over Shoulder</td></tr><tr><td>colored inner hair</td><td>Colored Inner Hair</td><td>hair bun</td><td>Hair Bun</td></tr><tr><td>streaked hair</td><td>Streaked Hair</td><td>double bun</td><td>Double Bun</td></tr></tbody></table>
+
+<h2 id="Face"><a href="#Face" class="headerlink" title="Face"></a>Face</h2><table><thead><tr><th>Face</th><th>Description</th><th>Face</th><th>Description</th></tr></thead><tbody><tr><td>light smile</td><td>Light Smile</td><td>seductive smile</td><td>Seductive Smile</td></tr><tr><td>grin</td><td>Grin</td><td>laughing</td><td>Laughing</td></tr><tr><td>excited</td><td>Excited</td><td>smirk</td><td>Smirk</td></tr><tr><td>smug</td><td>Smug</td><td>embarrassed</td><td>Embarrassed</td></tr><tr><td>shy</td><td>Shy</td><td>blush</td><td>Blush</td></tr><tr><td>sad</td><td>Sad</td><td>pout</td><td>Pout</td></tr><tr><td>sigh</td><td>Sigh</td><td>angry</td><td>Angry</td></tr><tr><td>annoyed</td><td>Annoyed</td><td>frown</td><td>Frown</td></tr><tr><td>wide eyed</td><td>Wide Eyed</td><td>jitome</td><td>Scornful Eyes</td></tr><tr><td>serious</td><td>Serious</td><td>smirk</td><td>Serious</td></tr><tr><td>scowl</td><td>Sharp</td><td>crazy</td><td>Crazy</td></tr><tr><td>dark_persona</td><td>Dark Persona</td><td>naughty_face</td><td>Naughty Face</td></tr><tr><td>endured_face</td><td>Enduring Face</td><td>ahegao</td><td>Ahegao</td></tr></tbody></table>
+
+<p>## </p>
+<h2 id="Cloth"><a href="#Cloth" class="headerlink" title="Cloth"></a>Cloth</h2><table><thead><tr><th>Cloth</th><th>Description</th><th>Cloth</th><th>Description</th></tr></thead><tbody><tr><td>side-tie bikini bottom</td><td>Tie-side bikini bottoms</td><td>detached collar</td><td>Detachable collar, only the collar</td></tr><tr><td>front-tie bikini top</td><td>Front-tie bikini top</td><td>cuffs</td><td>Cuffs</td></tr><tr><td>frilled bikini</td><td>Frilled bikini</td><td>midriff</td><td>Midriff top</td></tr><tr><td>string bikini</td><td>String bikini</td><td>crop top</td><td>Crop top</td></tr><tr><td>highleg bikini</td><td>High-leg bikini</td><td>clothing cutout</td><td>Cut-out clothing</td></tr><tr><td>o-ring bikini</td><td>O-ring bikini</td><td>breast curtains</td><td>Breast curtains</td></tr><tr><td>sling bikini</td><td>Sling bikini</td><td>versus bikini</td><td>Gem bikini</td></tr><tr><td>mismatched bikini</td><td>Mismatched bikini</td><td>collared shirt</td><td>Collared shirt</td></tr><tr><td>revealing clothes</td><td>Revealing clothes</td><td>vest</td><td>Vest</td></tr><tr><td>see-through</td><td>See-through clothes</td><td>puffy sleeves</td><td>Puffy sleeves</td></tr><tr><td>garter straps</td><td>Garter straps</td><td>peaked cap</td><td>Peaked cap</td></tr><tr><td>cheerleader</td><td>Cheerleader</td><td>pelvic curtain</td><td>Pelvic curtain</td></tr><tr><td>pleated skirt</td><td>Pleated skirt</td><td>halter shirt</td><td>Halter shirt</td></tr><tr><td>suspender skirt</td><td>Suspender skirt</td><td>ribbed sweater</td><td>Ribbed sweater</td></tr><tr><td>leotard</td><td>Leotard</td><td>bodysuit</td><td>Bodysuit</td></tr><tr><td>tank top</td><td>Tank top</td><td>torn clothes</td><td>Torn clothes</td></tr><tr><td>taut clothes</td><td>Tight clothes</td><td>impossible clothes</td><td>Impossible clothes</td></tr><tr><td>string panties</td><td>String panties</td><td>pantyhose</td><td>Pantyhose</td></tr><tr><td>panties under pantyhose</td><td>Panties under pantyhose</td><td>competition swimsuit</td><td>Competition swimsuit</td></tr><tr><td>undersized clothes</td><td>Undersized clothes</td><td>cropped jacket</td><td>Cropped jacket</td></tr><tr><td>plugsuit</td><td>Plugsuit, EVA-type bodysuit</td><td>crotchless panties</td><td>Crotchless panties</td></tr><tr><td>legwear</td><td>Legwear</td><td>serafuku</td><td>Sailor uniform</td></tr><tr><td>sailor collar</td><td>Sailor collar</td><td>kimono</td><td>Kimono</td></tr><tr><td>yukata</td><td>Yukata</td><td>japanese clothes</td><td>Japanese clothes</td></tr><tr><td>sports bra</td><td>Sports bra</td><td>bike shorts</td><td>Bike shorts</td></tr><tr><td>lolita fashion</td><td>Lolita fashion</td><td>race queen</td><td>Race queen</td></tr><tr><td>skindentation</td><td>Tight-fitting clothes</td><td>raglan sleeves</td><td>Raglan sleeves</td></tr><tr><td>sleeves past fingers</td><td>Sleeves past fingers</td><td>sleeves past wrist</td><td>Sleeves past wrist</td></tr><tr><td>bunnysuit</td><td>Bunny suit</td><td>reverse bunnysuit</td><td>Reverse bunny suit</td></tr><tr><td>reverse outfit</td><td>Reversed outfit</td><td>straitjacket</td><td>Straitjacket</td></tr><tr><td>sleeve skirts</td><td>Sleeve skirts</td><td>covered nipples</td><td>Covered nipples</td></tr></tbody></table>
+
+<h2 id="Accessory"><a href="#Accessory" class="headerlink" title="Accessory"></a>Accessory</h2><p><table><thead><tr><th>Accessory</th><th>Description</th><th>Accessory</th><th>Description</th></tr></thead><tbody><tr><td>tassel</td><td>Tassel</td><td>wristband</td><td>Wristband</td></tr><tr><td>epaulettes</td><td>Epaulettes</td><td>spaghetti strap</td><td>Spaghetti strap</td></tr><tr><td>ascot</td><td>Ascot</td><td>bridal gauntlets</td><td>Bridal gauntlets</td></tr><tr><td>trim</td><td>Trim</td><td>criss-cross halter</td><td>Criss-cross halter</td></tr><tr><td>bowtie</td><td>Bowtie</td><td>halterneck</td><td>Halterneck</td></tr><tr><td>neck ribbon</td><td>Neck ribbon</td><td>harness</td><td>Harness</td></tr><tr><td>lapels</td><td>Lapels</td><td>corset</td><td>Corset</td></tr><tr><td>frills</td><td>Frills</td><td>underbust</td><td>Underbust corset</td></tr><tr><td>buckle</td><td>Buckle</td><td>necklace</td><td>Necklace</td></tr><tr><td>belt buckle</td><td>Belt buckle</td><td>sailor collar</td><td>Sailor collar</td></tr><tr><td>chest harness</td><td>Chest harness</td><td>hairband</td><td>Hairband</td></tr><tr><td>suspenders</td><td>Suspenders</td><td>vambraces</td><td>Vambraces</td></tr><tr><td>lace-trimmed</td><td>Lace-trimmed</td><td>elbow gloves</td><td>Elbow gloves</td></tr><tr><td>veil</td><td>Veil</td><td>interface headset</td><td>Asuka’s headgear</td></tr><tr><td>tinted eyewear</td><td>Tinted eyewear</td><td>chest jewel</td><td>Chest jewel</td></tr><tr><td>pocket watch</td><td>Pocket watch</td><td>tiara</td><td>Tiara</td></tr><tr><td>hachimaki</td><td>Hachimaki, Japanese headband</td><td>fake animal ears</td><td>Fake animal ears</td></tr><tr><td>headgear</td><td>Headgear</td><td>hat bow</td><td>Hat bow</td></tr><tr><td>sweatdrop</td><td>Sweatdrop</td><td>pom<em>pom</em>(clothes)</td><td>Pom-poms (on clothes)</td></tr><tr><td>water drop</td><td>Water drop</td><td>pom<em>pom</em>(cheerleading)</td><td>Pom-poms (cheerleading)</td></tr><tr><td>falling petals</td><td>Falling petals</td><td>neck ring</td><td>Neck ring</td></tr><tr><td>wrist cuffs</td><td>Wrist cuffs</td><td>stitches</td><td>Stitches</td></tr><tr><td>chain</td><td>Chain</td><td>visor cap</td><td>Visor cap</td></tr><tr><td>o-ring</td><td>O-ring decoration</td><td>scrunchie</td><td>Scrunchie</td></tr><tr><td></td></tr></tbody></table></p>
+</body></html>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Stable-Diffusion/">Stable Diffusion</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/08/10/Open-Source Real-Time Face Swapping Suddenly Goes Viral/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Open-Source Real-Time Face Swapping Suddenly Goes Viral
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/08/07/Fooocus and SimpleSDXL/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Fooocus and SimpleSDXL</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Photo-Realistic"><span class="nav-number">1.</span> <span class="nav-text">Photo Realistic</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Negative-Prompt-for-Beauty"><span class="nav-number">2.</span> <span class="nav-text">Negative Prompt for Beauty</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Style"><span class="nav-number">3.</span> <span class="nav-text">Style</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lighting-Style"><span class="nav-number">4.</span> <span class="nav-text">Lighting Style</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hair"><span class="nav-number">5.</span> <span class="nav-text">Hair</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Face"><span class="nav-number">6.</span> <span class="nav-text">Face</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloth"><span class="nav-number">7.</span> <span class="nav-text">Cloth</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Accessory"><span class="nav-number">8.</span> <span class="nav-text">Accessory</span></a></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2024 adx-flare All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        <!--  <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">粤ICP备2022008267号-2</a> -->
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
